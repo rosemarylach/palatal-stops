@@ -8,9 +8,9 @@ Created on Tue Oct 19 13:55:38 2021
 import os
 import numpy as np
 
-os.chdir("C:/Users/rlach/Documents/Rice/Junior/Semester 1/LING 401/Final Project/Confusion matrix csvs")  #0) Change folder name
+os.chdir("C:/Users/rlach/Documents/Rice/Junior/Semester 1/LING 401/Final Project/palatal-stops/Confusion matrix csvs")  #0) Change folder name
 
-filename = 'gage.csv' #1) change file name if needed
+filename = 'vietnamese.csv' #1) change file name if needed
 numofsounds = 6  # number of columns in spreadsheet
 new_array = np.zeros((numofsounds-1,numofsounds-1), dtype = float)
 values = np.genfromtxt(filename,delimiter=',',skip_header=1, usecols=range(1,numofsounds))  
